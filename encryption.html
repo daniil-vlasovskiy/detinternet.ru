@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<title>Что такое шифрование?</title>
+<style>
+body {
+    background-image: url("image/background.png");
+    cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;
+    background-size:100%;
+    background-attachment:fixed;
+}
+#header {
+    background-image: url("image/header.png");
+    width: 1200px;
+    height: 120px;
+    background-size:100%;
+    
+}
+a {
+  cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;
+}
+.menu {
+    width: 1200px;
+    display: table;
+}
+.menu ul {
+    display: table-row;
+}
+.menu li {
+    display: table-cell;
+    background: #800000;
+}
+.menu ul li:hover, .menu a:hover {
+    background: #ff0000;
+}
+.menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+#box {
+    
+    width: 1200px;
+    height: 1800px;
+    background-color: rgba(255,0,0, 0.7);
+}
+p {
+    color: #fff;
+    font-size:45px;
+}
+#footer{
+  width:1200px;
+  height:100px;
+  background-image: url("image/footer.png");
+  background-size:100%;
+  margin-top:30px;
+}
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+}else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+}); 
+</script>
+<body>
+<center>
+<div id="header">
+<a href="index.html"><img src="image/Logo.png" width="140px" height="120px" align="left"></a>
+</div>
+<div class="menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="encyclopaedia.html">Энциклопедия</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
+<div id="box">
+<p>Что такое шифрование?</p>
+<img src="image/2.10.1.png" align="left" style="width:440px; height:300px; margin-left:30px; margin-top:12px;"/>
+<p align="justify">Шифрование - это процесс применение шрифта к защищаемой информации, то есть, преобразование защищаемой информации в шифрованное сообщение с помощью определённых правил. Для шифрования надо знать шифр и секретный ключ. Правила шифрования должны быть выбрать так, чтобы зашифрованное сообшение можно было расшифровать.</p>
+<p align="justify">Например один из самых известных шифров придумал Гай Юлий Цезарь. "Шифр Цезаря" заключается в том, что каждая буква исходного текста заменяется третьеё после неё буквой в алфавите, который считается написанным по кругу. Таким образом, вместо буквы А при шифровании получаем букву Г, вместо В - Е и так далее.</p>
+<img src="image/2.10.2.png" align="right" style="width:440px; height:300px; margin-left:30px; margin-top:12px;"/>
+<p align="justify">Угроз в информационной среде существует много, и от каждой из них можно придумать свой способ защиты: изолировать компьютер в запертой спальне, поставить PIN-код на включение смартфона и так далее. Но если защитить информацию путём физической изоляции, а так, чтобы её мог прочитать только владелец, результат будет более надёжным и всеобъёмлеющим. Абсолютно все перечисленные неурядицы - большие и малые - могли бы не случиться, если бы важная информация, предназначенная не для всех глаз, хранилась бы в зашифрованном виде.</p>
+<a href="encyclopaedia.html"><input type="button" onclick="history.back(-2); return false;" value="Назад" style="cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;"/> </a>
+</div>
+<div id="footer">
+<p style="font-family:Times new roman"> &copy; Detinternet.com </p>
+</div>
+</div>
+<div id = "toTop"style="cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;"> ^ Наверх 
+</div>
+</center>
+</body>
+</html>

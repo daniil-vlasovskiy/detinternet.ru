@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<title>Что такое веб-сайт?</title>
+<style>
+body {
+    background-image: url("image/background.png");
+    cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;
+    background-size:100%;
+    background-attachment:fixed;
+}
+#header {
+    background-image: url("image/header.png");
+    width: 1200px;
+    height: 120px;
+    background-size:100%;
+    
+}
+a {
+  cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;
+}
+.menu {
+    width: 1200px;
+    display: table;
+}
+.menu ul {
+    display: table-row;
+}
+.menu li {
+    display: table-cell;
+    background: #800000;
+}
+.menu ul li:hover, .menu a:hover {
+    background: #ff0000;
+}
+.menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+#box {
+    
+    width: 1200px;
+    height: 1900px;
+    background-color: rgba(255,0,0, 0.7);
+}
+p {
+    color: #fff;
+    font-size:45px;
+}
+#footer{
+  width:1200px;
+  height:100px;
+  background-image: url("image/footer.png");
+  background-size:100%;
+  margin-top:30px;
+}
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+}else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+}); 
+</script>
+<body>
+<center>
+<div id="header">
+<a href="index.html"><img src="image/Logo.png" width="140px" height="120px" align="left"></a>
+</div>
+<div class="menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="encyclopaedia.html">Энциклопедия</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
+<div id="box">
+<img src="image/2.8.1.png" align="left" style="width:440px; height:300px; margin-left:30px; margin-top:12px;"/>
+<p align="justify">Веб-сайт (Web-site), сокращенно сайт (site) — совокупность общедоступных взаимосвязанных веб-страниц, которые используют одно доменное имя. Веб-сайты могут создаваться и поддерживаться отдельным лицом, группой, бизнесом или организацией для различных целей. Вместе все общедоступные веб-сайты составляют всемирную паутину.</p>
+<p align="justify">
+Если говорить простым языком, сайт – это адрес расположенный в интернете, на котором находится какая-нибудь информация (текста, видео, фотографии, документы, музыка и прочее). А интернет – это получается сборник таких адресов.
+
+Или так: сейчас вы находитесь в браузере на веб-странице и читаете эту информацию, также вы можете перейти на другие страницы и все страницы в совокупности (в приделах данного веб-проекта) и есть сайт.</p>
+<p align="justify">
+Замечательный прогресс в технологиях создания веб-сайтов и безграничные возможности человеческого воображения определили огромное разнообразие веб-сайтов, которые мы видим сегодня в Интернете, когда задаем вопросы yandex, google и другим поисковым системам. Однако все они содержат некоторые базовые элементы, которые делают их легко узнаваемыми пользователями с точки зрения функциональности — домашняя страница (также известная как индексная), первая страница, которую мы видим при входе на web проект; меню — состоящее из гиперссылок (ссылки на основные страницы или разделы); основной контент (содержимое), область нижнего колонтитула (footer или подвал) с важными ссылками, информацией об авторских правах и тому подобное. С помощью гиперссылок посетитель перенаправляется с одной веб-страницы проекта на другую.</p>
+<a href="encyclopaedia.html"><input type="button" onclick="history.back(-2); return false;" value="Назад" style="cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;"/> </a>
+</div>
+<div id="footer">
+<p style="font-family:Times new roman"> &copy; Detinternet.com </p>
+</div>
+</div>
+<div id = "toTop"style="cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;"> ^ Наверх 
+</div>
+</center>
+</body>
+</html>
